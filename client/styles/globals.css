@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(2%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  75% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+h1 {
+  @apply text-4xl;
+  @apply font-bold;
+}
+h2 {
+  @apply text-3xl;
+  @apply font-bold;
+}
+h3 {
+  @apply text-2xl;
+  @apply font-bold;
+}
+h4 {
+  @apply text-xl;
+  @apply font-semibold;
+}
+h5 {
+  @apply text-lg;
+  @apply font-semibold;
+}
+h6 {
+  @apply text-sm;
+  @apply font-semibold;
+}
+
+.animate-arrow {
+  animation: moveArrow 2.5s linear infinite;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper .swiper-slide {
+    width: 340px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .swiper .swiper-slide {
+    width: 300px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .swiper {
+    width: 250px;
+    height: auto;
+  }
+  .swiper .swiper-slide {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/*Styling for pagination*/
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.pagination {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline;
+}
+
+.pagination li a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  background-color: #9333db;
+  color: #fff;
+}
+
+.pagination li a:hover {
+  background-color: #6cb2eb;
+}
+
+/* Dark mode styles for pagination */
+.dark .pagination li a {
+  color: #fff;
+}

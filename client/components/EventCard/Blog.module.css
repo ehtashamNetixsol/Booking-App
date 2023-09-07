@@ -1,0 +1,91 @@
+.mPostCardGridChild {
+  position: relative;
+  border-top-radius: 6px;
+}
+.text1 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.aBadge {
+  border-radius: 6px;
+  background-color: rgba(75, 107, 251, 0.05);
+  display: flex;
+  flex-direction: row;
+  padding: 4px 10px;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  align-self: stretch;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #181a2a;
+}
+.heading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.imageIcon1 {
+  position: relative;
+  border-radius: 28px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+.author {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.aAuthor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.date {
+  position: relative;
+  line-height: 24px;
+}
+.shortInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 16px;
+  color: #97989f;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.mPostCardGrid {
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: left;
+  font-size: 14px;
+  color: #4b6bfb;
+  font-family: "Work Sans";
+}
