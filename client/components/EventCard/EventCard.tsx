@@ -77,7 +77,7 @@ const EventCard = ({ event, swiper = false, isbooked }: any) => {
       />
       <div className={styles.content} >
         <div className={`${styles.heading} relative sm:z-10`}>
-          <div className="sm:absolute top-0 right-0 font-bold">
+          <div className="font-bold">
             {!isbooked ? (
               <button
                 className="bg-primary hover:bg-secondary px-2 py-2 text-white rounded-md"
